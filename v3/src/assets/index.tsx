@@ -192,12 +192,12 @@ import AwardFillIcon from "remixicon-react/AwardFillIcon";
 export const aboutData: AboutDataModel[] = [
   {
     title: "Successful Hobby Projects",
-    amount: 34,
+    amount: 15,
     icon: <Projector2LineIcon />,
   },
   {
     title: "Github Repos",
-    amount: 50,
+    amount: 30,
     icon: <GithubFillIcon />,
   },
   {
@@ -221,43 +221,57 @@ export const aboutText: string =
 export const experienceData: ExperienceDataModel[] = [
   {
     year: 2024,
-    title: "Full Stack Developer at Startup Company",
-    start: "Jan 2015",
-    end: "Dec 2017",
-    details: "18 month contract",
-    experience: ["Experience 1", "Experience 2"],
+    company: "Awen communications",
+    title: "SENIOR SOFTWARE ENGINEER",
+    start: "Mar 2022",
+    end: "June 2022",
+    details: "I worked as part of a small startup company to help build web and phone apps to assist support workers in raising and tracking client support cases. These apps integrated with the popular CRM Dynamics 360 and were primarily built with Node.js, React, Vue, Tailwind, AWS, and Dynamics 365 (+ Unified Service Desk). The biggest client was Ford Motor Company, for which we were able to work with great agility to fit their custom needs.",
+    experience: [],
   },
   {
     year: 2022,
-    title: "Advanced Learning and Early Experience",
-    start: "Jan 2015",
-    end: "Dec 2017",
-    details: "Here are the details about this education!",
-    experience: ["Experience 1", "Experience 2"],
+    company: "Waracle",
+    title: "SENIOR FULL STACK DEVELOPER",
+    start: "Mar 2022",
+    end: "June 2022",
+    details: "Helped launch Sainsbury’s Argos Monthly Payment Plan. I worked on React front-end, Node APIs, and unit/integration test. It was an excellent team working opportunity while also gaining experience with AWS serverless architecture.",
+    experience: [],
   },
   {
-    year: 3,
-    title: "Specialized Education and Real-World Application",
-    start: "Jan 2015",
-    end: "Dec 2017",
-    details: "Here are the details about this education!",
-    experience: ["Experience 1", "Experience 2"],
+    year: 2021,
+    company: "Carestream Dental",
+    title: "SENIOR FULL STACK DEVELOPER",
+    start: "Jan 2021",
+    end: "Nov 2021",
+    details: "Cloud-based (Azure) dental management software. Worked daily with .NET Core (C#), Entity Framework, SQL, OData, Azure, React, and MobX. Led upgrades, built new integrations, and developed projects for a major Saudi government contract.",
+    experience: [],
   },
   {
-    year: 4,
-    title: "Building Expertise and Expanding Skills",
-    start: "Jan 2015",
-    end: "Dec 2017",
-    details: "Here are the details about this education!",
-    experience: ["Experience 1", "Experience 2"],
+    year: 2020,
+    company: "Blackhawk Network",
+    title: "SENIOR FULL STACK ENGINEER",
+    start: "Jan 2019",
+    end: "Jan 2020",
+    details: "Blackhawk Network specialises in gift cards, payments, and other company benefit schemes such as “cycle to work”. Worked in a small team and gained valuable experience with technologies like .NET Core, Angular 8+, React, SQL, DotNetNuke, NUnit, PHP, NHibernate, Swagger, Git, JavaScript, NPM, Node.js, HTML, and SCSS.",
+    experience: [],
   },
   {
-    year: 5,
-    title: "Mastery and Leadership",
-    start: "Jan 2015",
-    end: "Dec 2017",
-    details: "Here are the details about this education!",
-    experience: ["Experience 1", "Experience 2"],
+    year: 2018,
+    company: "Lumesse",
+    title: "FULL STACK WEB DEVELOPER",
+    start: "May 2010",
+    end: "Oct 2018",
+    details: "Worked at a recruitment software company, handling front-end, back-end, and .NET-based integrations. Won multiple innovation awards while tackling new challenges. Built career pages for Santander, BBC, and the Ministry of Justice. Developed APIs from scratch and integrated with 100+ platforms like Monster, Reed, SHL, and TalentQ.",
+    experience: [],
+  },
+  {
+    year: 2010,
+    company: "VantageLand",
+    title: "WEB DEVELOPER",
+    start: "Mar 2008",
+    end: "May 2010",
+    details: "My first development job after graduating University was for the land selling company Vantageland. My main role was to create, update and maintain existing websites, while also create blueprints in AutoCAD.",
+    experience: [],
   },
 ];
 
@@ -296,12 +310,11 @@ export const projectsData: ProjectDataModel[] = [
     desc: "Updated version of my Developer profile",
     image: "/projects/developer-profile.jpg",
     tech: ["NextJS", "HTML", "React", "CSS", "Tailwind", "Typescript"],
-    url: "https://www.developerjay.com"
+    url: "https://www.developerjay.com",
   },
 ];
 
-
-export const uniqueTech = Array.from(new Set(projectsData.flatMap(project => project.tech)));
+export const uniqueTech = Array.from(new Set(projectsData.flatMap((project) => project.tech)));
 export const projectsButton: string[] = ["All", ...uniqueTech];
 // End of Projects
 
@@ -363,7 +376,8 @@ export const checkIcon = <CheckLineIcon />;
 export const questions: QuestionDataModel[] = [
   {
     question: "Do you prefer working more on the Front-end or Back-end?",
-    answer: "At the start of my career, I worked more on the FE and design, but over the last 10-15 years I've worked on a good balance of FE and BE. If I had to give a preference I would say 60/40 in favour of BackEnd work.",
+    answer:
+      "At the start of my career, I worked more on the FE and design, but over the last 10-15 years I've worked on a good balance of FE and BE. If I had to give a preference I would say 60/40 in favour of BackEnd work.",
   },
   {
     question: "Outside of web development do you have any hobbies?",

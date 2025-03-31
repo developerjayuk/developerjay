@@ -24,11 +24,12 @@ export type SkillDataModel = {
   name: string;
   icon: string;
   exp: number;
-  level: SkillLevel
+  level: SkillLevel;
 };
 
 export type ExperienceDataModel = {
   year: number;
+  company: string;
   title: string;
   start: string;
   end: string;
