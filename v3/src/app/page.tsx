@@ -1,5 +1,5 @@
 "use client";
-// import Hero from "@/components/Hero";
+import Hero from "@/components/Hero";
 // import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
@@ -44,8 +44,8 @@ export default function Home() {
       <Toggle>
         <NavBar id={id} />
         <div ref={compsRef}>
-          {/* <Hero />
-          <About /> */}
+          <Hero />
+          {/* <About /> */}
           <Skills />
           <Experience />
           <Projects />
