@@ -310,7 +310,7 @@ export const projectsData: ProjectDataModel[] = [
     desc: "Updated version of my Developer profile",
     image: "/projects/developer-profile.jpg",
     tech: ["NextJS", "HTML", "React", "CSS", "Tailwind", "Typescript"],
-    url: "https://www.developerjay.com",
+    url: "https://developerjay.com",
   },
 ];
 
