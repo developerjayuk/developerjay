@@ -27,7 +27,7 @@ const Skills = () => {
       <div className="pb-12">
         <h3 className="text-xl text-yellow-500">Advanced Level</h3>
         <p className="text-gray-800 dark:text-gray-300">
-          These are the technologies I've used for many years and still actively work with them on a
+          These are the technologies I&apos;ve used for many years and still actively work with them on a
           regular basis.
         </p>
       </div>
@@ -63,7 +63,7 @@ const Skills = () => {
       <div className="py-12">
         <h3 className="text-xl text-yellow-500">Intermediate Level</h3>
         <p className="text-gray-800 dark:text-gray-300">
-          These are the technologies I've used significantly in the past, but I'm not still actively
+          These are the technologies I&apos;ve used significantly in the past, but I&apos;m not still actively
           learning. I would be confident in relearning them quickly.
         </p>
       </div>
@@ -99,7 +99,7 @@ const Skills = () => {
       <div className="py-12">
         <h3 className="text-xl text-yellow-500">Basic Level</h3>
         <p className="text-gray-800 dark:text-gray-300">
-          These are some of the technologies I've used in the past and still retain a basic
+          These are some of the technologies I&apos;ve used in the past and still retain a basic
           knowledge of.
         </p>
       </div>

@@ -9,8 +9,9 @@ export type HeroIconDataModel = {
 export type ProjectDataModel = {
   name: string;
   desc: string;
-  url: string;
+  image: string;
   tech: string[];
+  url?: string;
 };
 
 export enum SkillLevel {

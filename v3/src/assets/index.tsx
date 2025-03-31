@@ -289,28 +289,20 @@ export const reviewsData = [
 // End of Reviews
 
 // Projects
+// images 612 x 408
 export const projectsData: ProjectDataModel[] = [
   {
-    name: "Developerjay.com",
-    desc: "My developer portfolio",
-    url: "/projects/image-1.jpg",
-    tech: ["NextJS", "HTML"],
-  },
-  {
-    name: "Anotherwebsite.net",
-    desc: "Here are the details for the next project.",
-    url: "/projects/image-2.jpg",
-    tech: ["Javascript"],
-  },
-  {
-    name: "A 3rd website",
-    desc: "Here are the cool details for the 3rd project in this list.",
-    url: "/projects/image-3.jpg",
-    tech: ["CSS"],
+    name: "Developer profile 2025",
+    desc: "Updated version of my Developer profile",
+    image: "/projects/developer-profile.jpg",
+    tech: ["NextJS", "HTML", "React", "CSS", "Tailwind", "Typescript"],
+    url: "https://www.developerjay.com"
   },
 ];
 
-export const projectsButton: string[] = ["All", "HTML", "CSS", "JavaScript", "ReactJS"];
+
+export const uniqueTech = Array.from(new Set(projectsData.flatMap(project => project.tech)));
+export const projectsButton: string[] = ["All", ...uniqueTech];
 // End of Projects
 
 // Pricing Plans

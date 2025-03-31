@@ -20,6 +20,7 @@ const Projects = () => {
   useEffect(() => {
     handleClick();
     prevIndex.current = index;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
 
   return (
