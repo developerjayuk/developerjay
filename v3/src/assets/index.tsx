@@ -382,7 +382,7 @@ export const questions: QuestionDataModel[] = [
   {
     question: "Outside of web development do you have any hobbies?",
     answer:
-      "My two loves are health, learning and travelling. As such my hobbies include exercise (gym, football, cycling), self development, reading, learning Spanish,  cooking and playing music (guitar and piano). My love for travelling and experience new cultures has taken me to many countries around the world.",
+      "My three main passions are learning, health, and travelling. As such my hobbies include exercise (gym, football, cycling), self development, personal web development projects, reading, learning Spanish / Portuguese, cooking and playing music (guitar and piano). My love for travelling and experience new cultures has taken me to many countries around the world.",
   },
   {
     question: "What are your strengths?",
