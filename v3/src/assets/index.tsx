@@ -224,7 +224,7 @@ export const experienceData: ExperienceDataModel[] = [
     company: "Awen communications",
     title: "SENIOR SOFTWARE ENGINEER",
     start: "Mar 2022",
-    end: "June 2022",
+    end: "May 2024",
     details: "I worked as part of a small startup company to help build web and phone apps to assist support workers in raising and tracking client support cases. These apps integrated with the popular CRM Dynamics 360 and were primarily built with Node.js, React, Vue, Tailwind, AWS, and Dynamics 365 (+ Unified Service Desk). The biggest client was Ford Motor Company, for which we were able to work with great agility to fit their custom needs.",
     experience: [],
   },
