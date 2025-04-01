@@ -221,7 +221,7 @@ export const aboutText: string =
 export const experienceData: ExperienceDataModel[] = [
   {
     year: 2024,
-    company: "Awen communications",
+    company: "Contract @ Awen communications",
     title: "SENIOR SOFTWARE ENGINEER",
     start: "Mar 2022",
     end: "May 2024",
@@ -231,7 +231,7 @@ export const experienceData: ExperienceDataModel[] = [
   {
     year: 2022,
     company: "Waracle",
-    title: "SENIOR FULL STACK DEVELOPER",
+    title: "Contract @ SENIOR FULL STACK DEVELOPER",
     start: "Mar 2022",
     end: "June 2022",
     details: "Helped launch Sainsbury’s Argos Monthly Payment Plan. I worked on React front-end, Node APIs, and unit/integration test. It was an excellent team working opportunity while also gaining experience with AWS serverless architecture.",
@@ -239,7 +239,7 @@ export const experienceData: ExperienceDataModel[] = [
   },
   {
     year: 2021,
-    company: "Carestream Dental",
+    company: "Contract @ Carestream Dental",
     title: "SENIOR FULL STACK DEVELOPER",
     start: "Jan 2021",
     end: "Nov 2021",
@@ -248,7 +248,7 @@ export const experienceData: ExperienceDataModel[] = [
   },
   {
     year: 2020,
-    company: "Blackhawk Network",
+    company: "Contract @ Blackhawk Network",
     title: "SENIOR FULL STACK ENGINEER",
     start: "Jan 2019",
     end: "Jan 2020",
@@ -257,7 +257,7 @@ export const experienceData: ExperienceDataModel[] = [
   },
   {
     year: 2018,
-    company: "Lumesse",
+    company: "Permanent @ Lumesse",
     title: "FULL STACK WEB DEVELOPER",
     start: "May 2010",
     end: "Oct 2018",
@@ -266,7 +266,7 @@ export const experienceData: ExperienceDataModel[] = [
   },
   {
     year: 2010,
-    company: "VantageLand",
+    company: "Permanent @ VantageLand",
     title: "WEB DEVELOPER",
     start: "Mar 2008",
     end: "May 2010",

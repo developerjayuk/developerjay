@@ -51,7 +51,7 @@ const Experience = () => {
               className="relative flex flex-col gap-y-3 rounded-md border border-red-200 bg-white p-4 tracking-wide sm:text-sm z-10 dark:bg-zinc-700 transition-colors"
             >
               <h1 className="text-xl sm:text-lg font-light text-gray-700 dark:text-white text-center">{data.title}</h1>
-              <p className="text-gray-500 dark:text-gray-100 font-light text-center">@ {data.company}</p>
+              <p className="text-gray-500 dark:text-gray-100 font-light text-center">{data.company}</p>
               <p className="text-gray-500 dark:text-gray-100 font-light text-center">{data.start} to {data.end}</p>
               <p className="text-gray-500 dark:text-gray-100">
                 <span className="block font-light">My Role:</span>
