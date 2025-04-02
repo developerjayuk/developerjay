@@ -23,7 +23,6 @@ export default function Home() {
         entries.forEach((entry) => {
           const intersecting = entry.isIntersecting;
           if (intersecting) {
-            console.log(entry.target.id);
             setId(entry.target.id);
           }
         });
