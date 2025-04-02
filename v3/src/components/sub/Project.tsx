@@ -39,7 +39,9 @@ const Project: React.FC<PropTypes> = ({ data, index }) => {
         <p className="text-justify text-gray-500 first-letter:pl-2 dark:text-gray-100 transition-colors">
           {data.desc}
         </p>
-        {data.url && <p>{data.url}</p>}
+        <a href={data.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+          {data.url}
+        </a>
       </motion.div>
     </motion.div>
   );

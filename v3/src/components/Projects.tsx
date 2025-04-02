@@ -26,7 +26,7 @@ const Projects = () => {
   return (
     <div id="projects" className="min-h-screen py-20">
       <Heading text={"Projects"} />
-      <p className="text-red-600">* Full list to be added soon</p>
+      <p className="italic">These are a few of the many non commercial personal hobby projects I build in my spare time</p>
       <div className="flex flex-wrap items-center gap-4 py-10 mx-2">
         {projectsButton.map((project, i) => (
           <motion.button

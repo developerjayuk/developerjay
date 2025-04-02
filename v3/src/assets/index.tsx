@@ -312,6 +312,55 @@ export const projectsData: ProjectDataModel[] = [
     tech: ["NextJS", "HTML", "React", "CSS", "Tailwind", "Typescript"],
     url: "https://developerjay.com",
   },
+  {
+    name: "Tailwind CSS & JS animations",
+    desc: "Demo HTML template that uses tailwind CSS and JS animations",
+    image: "/projects/tailwind-animations.jpg",
+    tech: ["HTML", "CSS", "Tailwind"],
+    url: "https://developerjayuk.github.io/playground-javascript/animated-template/",
+  },
+  {
+    name: "Movie App using React",
+    desc: "A movie app specifically to test React Hooks",
+    image: "/projects/react-movie-app.jpg",
+    tech: ["HTML", "CSS", "React", "API"],
+    url: "https://react-hooks-movie-app.vercel.app/",
+  },
+  {
+    name: "Flexbox Demo",
+    desc: "Getting to grips with Flexbox layouts",
+    image: "/projects/flexbox-demo.jpg",
+    tech: ["HTML", "CSS", "Flexbox"],
+    url: "https://developerjayuk.github.io/playground-advanced-css/Flexbox/",
+  },
+  {
+    name: "Movie App using Angular",
+    desc: "Project to test Angular with a movie API",
+    image: "/projects/angular-movie-app.jpg",
+    tech: ["HTML", "CSS", "Angular", "Typescript", "API"],
+    url: "https://movie-geek.vercel.app/",
+  },
+  {
+    name: "I-Robot Comedian",
+    desc: "Pure JS project that uses 2 APIs",
+    image: "/projects/i-robot-comedian.jpg",
+    tech: ["HTML", "CSS", "Javascript", "API"],
+    url: "https://developerjayuk.github.io/playground-javascript/i-robot-comedian/",
+  },
+  {
+    name: "Infinite scroll Demo",
+    desc: "Using Javascript, CSS and an API to infinitely scroll",
+    image: "/projects/infinite-scroll.jpg",
+    tech: ["HTML", "CSS", "Javascript", "API"],
+    url: "https://developerjayuk.github.io/playground-javascript/infinite-scroll/",
+  },
+  {
+    name: "Pig Game",
+    desc: "Creating a version of the Pig Game only using JS",
+    image: "/projects/pig-game.jpg",
+    tech: ["HTML", "CSS", "Javascript"],
+    url: "https://developerjayuk.github.io/playground-javascript/Pig-Dice-Game/",
+  },
 ];
 
 export const uniqueTech = Array.from(new Set(projectsData.flatMap((project) => project.tech)));
