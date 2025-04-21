@@ -220,6 +220,15 @@ export const aboutText: string =
 // Experience
 export const experienceData: ExperienceDataModel[] = [
   {
+    year: 2025,
+    company: "Contract @ Waracle",
+    title: "SENIOR C# DEVELOPER",
+    start: "Apr 2025",
+    end: "Current",
+    details: "On going project.",
+    experience: [],
+  },
+  {
     year: 2024,
     company: "Contract @ Awen communications",
     title: "SENIOR SOFTWARE ENGINEER",
