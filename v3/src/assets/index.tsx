@@ -315,7 +315,7 @@ export const reviewsData = [
 // images 612 x 408
 export const projectsData: ProjectDataModel[] = [
   {
-    name: "Developer profile 2025",
+    name: "Developer profile (v3)",
     desc: "Updated version of my Developer profile",
     image: "/projects/developer-profile.jpg",
     tech: ["NextJS", "HTML", "React", "CSS", "Tailwind", "Typescript"],
