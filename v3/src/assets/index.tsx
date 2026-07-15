@@ -224,8 +224,8 @@ export const experienceData: ExperienceDataModel[] = [
     company: "Contract @ Waracle",
     title: "SENIOR C# DEVELOPER",
     start: "Apr 2025",
-    end: "Current",
-    details: "On going project.",
+    end: "Dec 2025",
+    details: "Helped a small team with the successful launch of a website for the Insurance company SunLife. Responsible for any new architecture designs and also mentoring our great mid-level engineer. FE was remix based and fully responsive, BE and API was .NET Core 8, and hosting was done in Azure. A great team building experience and also being a new project allowed us some flexibility in technologies used.",
     experience: [],
   },
   {
