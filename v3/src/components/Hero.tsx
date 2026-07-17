@@ -97,6 +97,8 @@ const Hero = () => {
               key={i}
               className="rounded-lg hover:bg-red-400 hover:-text-white transition-colors"
               title={icon.title}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {icon.icon}
             </a>
