@@ -31,7 +31,7 @@ const Experience = () => {
       />
       <div
         ref={containerRef}
-        className="relative w-full h-full flex flex-col items-center justofy-center gap-y-10 lg:gap-y-20 py-10"
+        className="relative w-full h-full flex flex-col items-center justify-center gap-y-10 lg:gap-y-20 py-10"
       >
         <p className="relative -top-[30px] z-5 text-yellow-500">Latest</p>
         {experienceData.map((data, i) => (
@@ -50,23 +50,40 @@ const Experience = () => {
               transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
               className="relative flex flex-col gap-y-3 rounded-md border border-red-200 bg-white p-4 tracking-wide sm:text-sm z-10 dark:bg-zinc-700 transition-colors"
             >
-              <h1 className="text-xl sm:text-lg font-light text-gray-700 dark:text-white text-center">{data.title}</h1>
-              <p className="text-gray-500 dark:text-gray-100 font-light text-center">{data.company}</p>
-              <p className="text-gray-500 dark:text-gray-100 font-light text-center">{data.start} to {data.end}</p>
-              <p className="text-gray-500 dark:text-gray-100">
-                <span className="block font-light">My Role:</span>
-                <span className="block pl-2 font-extralight">{data.details}</span>
+              <h1 className="text-xl sm:text-lg font-light text-gray-700 dark:text-white text-center">
+                {data.title}
+              </h1>
+              <p className="text-gray-500 dark:text-gray-100 font-light text-center">
+                {data.company}
               </p>
-              <div className="text-gray-800 dark:text-gray-200 transition-colors">
-                <span className="font-light">Experience:</span>
-                <ul className="pl-2">
-                  {data.experience.map((exp, j) => (
-                    <li key={j} className="my-1 font-extralight">
-                      {exp}
+              <p className="text-gray-500 dark:text-gray-100 font-light text-center">
+                {data.start} to {data.end}
+              </p>
+              <div className="text-gray-500 dark:text-gray-100">
+                <span className="block font-bold">Role Highlights:</span>
+                <ul className="pl-2 font-extralight list-disc list-inside">
+                  {data.details.map((detail, k) => (
+                    <li key={k} className="my-4">
+                      {detail}
                     </li>
                   ))}
                 </ul>
               </div>
+              {data.experience.some((exp) => exp.length > 0) && (
+                <div className="text-gray-800 dark:text-gray-200 transition-colors">
+                  <span className="font-light">Experience:</span>
+                  <ul className="pl-2">
+                    {data.experience.map(
+                      (exp, j) =>
+                        exp.length > 0 && (
+                          <li key={j} className="my-1 font-extralight">
+                            {exp}
+                          </li>
+                        ),
+                    )}
+                  </ul>
+                </div>
+              )}
               <span
                 className={`absolute top-20 text-red-300 -translate-y-1/2 lg:hidden
                 ${i % 2 === 0 ? "left-full rotate-180" : "right-full"}`}
@@ -91,8 +108,7 @@ const Experience = () => {
           initial={{ scaleY: 0 }}
           style={{ scaleY: scrollY }}
           className="absolute w-1 h-[97%] rounded-full bg-gray-400 origin-top pb-20 z-0"
-        >
-        </motion.div>
+        ></motion.div>
         <p className="relative top-[60px] z-5 text-yellow-500">Oldest</p>
       </div>
     </div>

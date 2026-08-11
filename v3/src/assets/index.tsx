@@ -181,6 +181,30 @@ export const skillsData: SkillDataModel[] = [
     exp: 4,
     level: SkillLevel.Advanced,
   },
+  {
+    name: "LLMs",
+    icon: "/skills/generative.svg",
+    exp: 3,
+    level: SkillLevel.Intermediate,
+  },
+  {
+    name: "OpenAI API",
+    icon: "/skills/chat-gpt.svg",
+    exp: 2,
+    level: SkillLevel.Advanced,
+  },
+  {
+    name: "AI Agents",
+    icon: "/skills/chat-bot.svg",
+    exp: 2,
+    level: SkillLevel.Advanced,
+  },
+  {
+    name: "Generative AI",
+    icon: "/skills/generative.svg",
+    exp: 2,
+    level: SkillLevel.Intermediate,
+  },
 ].sort((a, b) => b.exp - a.exp);
 // End of Skills
 
@@ -220,12 +244,28 @@ export const aboutText: string =
 // Experience
 export const experienceData: ExperienceDataModel[] = [
   {
+    year: 2026,
+    company: "",
+    title: "Career Break",
+    start: "Jan 2026",
+    end: "Current",
+    details: ["Upskilling in new technologies and doing some travelling"],
+    experience: [],
+  },
+  {
     year: 2025,
     company: "Contract @ Waracle",
     title: "SENIOR C# DEVELOPER",
     start: "Apr 2025",
     end: "Dec 2025",
-    details: "Helped a small team with the successful launch of a website for the Insurance company SunLife. Responsible for any new architecture designs and also mentoring our great mid-level engineer. FE was remix based and fully responsive, BE and API was .NET Core 8, and hosting was done in Azure. A great team building experience and also being a new project allowed us some flexibility in technologies used.",
+    details: [
+      "Designed and implemented backend architecture for a new customer-facing insurance platform for SunLife.",
+      "Developed REST APIs and backend services using C# / .NET 8, with a Remix / React frontend hosted in Azure.",
+      "Made architectural and technical decisions across the application stack, balancing maintainability, scalability and delivery requirements.",
+      "Worked closely with the development team to establish development patterns and maintain code quality.",
+      "Mentored a mid-level engineer, providing technical guidance, code reviews and support with architectural decisions.",
+      "Contributed across the full software development lifecycle from architecture and development through to production launch."
+    ],
     experience: [],
   },
   {
@@ -234,7 +274,12 @@ export const experienceData: ExperienceDataModel[] = [
     title: "SENIOR SOFTWARE ENGINEER",
     start: "Mar 2022",
     end: "May 2024",
-    details: "I worked as part of a small startup company to help build web and phone apps to assist support workers in raising and tracking client support cases. These apps integrated with the popular CRM Dynamics 360 and were primarily built with Node.js, React, Vue, Tailwind, AWS, and Dynamics 365 (+ Unified Service Desk). The biggest client was Ford Motor Company, for which we were able to work with great agility to fit their custom needs.",
+    details: [
+      "Contributed to the successful launch of the Sainsbury's Argos Monthly Payment Plan as part of a cross-functional development team.",
+      "Developed customer-facing features using React and Node.js APIs.",
+      "Built and maintained unit and integration tests to ensure application quality.",
+      "Worked with AWS serverless architecture and cloud-native deployments in an agile environment."
+    ],
     experience: [],
   },
   {
@@ -243,7 +288,12 @@ export const experienceData: ExperienceDataModel[] = [
     title: "Contract @ SENIOR FULL STACK DEVELOPER",
     start: "Mar 2022",
     end: "June 2022",
-    details: "Helped launch Sainsbury’s Argos Monthly Payment Plan. I worked on React front-end, Node APIs, and unit/integration test. It was an excellent team working opportunity while also gaining experience with AWS serverless architecture.",
+    details: [
+      "Contributed to the successful launch of the Sainsbury's Argos Monthly Payment Plan as part of a cross-functional development team.",
+      "Developed customer-facing features using React and Node.js APIs.",
+      "Built and maintained unit and integration tests to ensure application quality.", 
+      "Worked with AWS serverless architecture and cloud-native deployments in an agile environment."
+    ],
     experience: [],
   },
   {
@@ -252,7 +302,12 @@ export const experienceData: ExperienceDataModel[] = [
     title: "SENIOR FULL STACK DEVELOPER",
     start: "Jan 2021",
     end: "Nov 2021",
-    details: "Cloud-based (Azure) dental management software. Worked daily with .NET Core (C#), Entity Framework, SQL, OData, Azure, React, and MobX. Led upgrades, built new integrations, and developed projects for a major Saudi government contract.",
+    details: [
+      "Developed and maintained cloud-based dental management software using C#, .NET Core, Entity Framework, SQL, OData, Azure and React.",
+      "Designed and delivered new functionality and integrations across frontend and backend systems.",
+      "Led technical upgrades and improvements to codebase maintainability and reliability.",
+      "Contributed to enterprise projects supporting a major Saudi government contract."
+    ],
     experience: [],
   },
   {
@@ -261,7 +316,13 @@ export const experienceData: ExperienceDataModel[] = [
     title: "SENIOR FULL STACK ENGINEER",
     start: "Jan 2019",
     end: "Jan 2020",
-    details: "Blackhawk Network specialises in gift cards, payments, and other company benefit schemes such as “cycle to work”. Worked in a small team and gained valuable experience with technologies like .NET Core, Angular 8+, React, SQL, DotNetNuke, NUnit, PHP, NHibernate, Swagger, Git, JavaScript, NPM, Node.js, HTML, and SCSS.",
+    details: [
+      "Developed enterprise web applications for a global provider of gift cards, payments and employee benefit solutions.",
+      "Delivered full-stack functionality using C#, .NET Core, React, Angular, JavaScript and Node.js.",
+      "Developed and integrated APIs and backend services using .NET Core, SQL and NHibernate.",
+      "Built automated tests with NUnit and contributed to code reviews, technical decisions and agile delivery.",
+      "Worked across a diverse technology stack including PHP, DotNetNuke, Swagger, NPM and SCSS."
+    ],
     experience: [],
   },
   {
@@ -270,7 +331,12 @@ export const experienceData: ExperienceDataModel[] = [
     title: "FULL STACK WEB DEVELOPER",
     start: "May 2010",
     end: "Oct 2018",
-    details: "Worked at a recruitment software company, handling front-end, back-end, and .NET-based integrations. Won multiple innovation awards while tackling new challenges. Built career pages for Santander, BBC, and the Ministry of Justice. Developed APIs from scratch and integrated with 100+ platforms like Monster, Reed, SHL, and TalentQ.",
+    details: [
+      "Worked at a recruitment software company, handling front-end, back-end, and .NET-based integrations.",
+      "Won multiple innovation awards while tackling new challenges.",
+      "Built career pages for Santander, BBC, and the Ministry of Justice.",
+      "Developed APIs from scratch and integrated with 100+ platforms like Monster, Reed, SHL, and TalentQ."
+    ],
     experience: [],
   },
   {
@@ -279,7 +345,13 @@ export const experienceData: ExperienceDataModel[] = [
     title: "WEB DEVELOPER",
     start: "Mar 2008",
     end: "May 2010",
-    details: "My first development job after graduating University was for the land selling company Vantageland. My main role was to create, update and maintain existing websites, while also create blueprints in AutoCAD.",
+    details: [
+      "Developed enterprise recruitment software and integration services used by major organisations and recruitment teams.",
+      "Designed and built APIs and integrations connecting the platform with 100+ external recruitment and assessment platforms.",
+      "Delivered career-site solutions for organisations including Santander, the BBC and the Ministry of Justice.",
+      "Developed scalable frontend and backend solutions, integrating platforms including Monster, Reed, SHL and TalentQ. Collaborated with colleagues and stakeholders to deliver new functionality and technical improvements.",
+      "Received multiple company innovation awards for contributions to new products and technical solutions."
+    ],
     experience: [],
   },
 ];

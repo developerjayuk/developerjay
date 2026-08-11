@@ -33,7 +33,7 @@ export type ExperienceDataModel = {
   title: string;
   start: string;
   end: string;
-  details: string;
+  details: string[];
   experience: string[];
 };
 
