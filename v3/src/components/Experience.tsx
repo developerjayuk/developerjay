@@ -61,7 +61,7 @@ const Experience = () => {
               </p>
               <div className="text-gray-500 dark:text-gray-100">
                 <span className="block font-bold">Role Highlights:</span>
-                <ul className="pl-2 font-extralight list-disc list-inside">
+                <ul className="pl-2 font-light list-disc list-inside">
                   {data.details.map((detail, k) => (
                     <li key={k} className="my-4">
                       {detail}
