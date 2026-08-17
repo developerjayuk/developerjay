@@ -77,7 +77,7 @@ export const skillsData: SkillDataModel[] = [
     name: "Docker",
     icon: "/skills/docker.svg",
     exp: 2,
-    level: SkillLevel.Basic,
+    level: SkillLevel.Intermediate,
   },
   {
     name: ".Net",
