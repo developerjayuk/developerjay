@@ -1,0 +1,7 @@
+// ignore files claude files for now
+.archon
+.agents
+.claude/agents
+.claude/examples
+.claude/hooks
+.claude/skills

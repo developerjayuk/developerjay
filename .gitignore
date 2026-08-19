@@ -353,3 +353,12 @@ MigrationBackup/
 .ionide/
 
 /.resources
+blog/.mcp.json
+blog/.claude/CLAUDE.md.template
+blog/.claude/mcp-posthog-headers.sh
+blog/.claude/settings.json.example
+blog/.claude/references/architecture-patterns.md
+blog/.claude/references/codebase-search-and-lsp.md
+blog/.claude/references/conventions.md
+blog/.claude/references/vertical-slice-architecture.md
+blog/tooling/mcp/codebase_search.py
