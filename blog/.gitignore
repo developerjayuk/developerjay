@@ -4,4 +4,7 @@
 .claude/agents
 .claude/examples
 .claude/hooks
+
+# local env files (never commit real Supabase keys) - .env.local.example is intentionally NOT ignored
+.env*.local
 .claude/skills
