@@ -33,10 +33,12 @@ create trigger posts_set_updated_at
 -- RLS
 alter table public.posts enable row level security;
 
+drop policy if exists "public read published posts" on public.posts;
 create policy "public read published posts"
   on public.posts for select
   using (status = 'published');
 
+drop policy if exists "admin full access" on public.posts;
 create policy "admin full access"
   on public.posts for all
   using (auth.role() = 'authenticated')
@@ -54,18 +56,22 @@ insert into storage.buckets (id, name, public)
 values ('post-images', 'post-images', true)
 on conflict (id) do nothing;
 
+drop policy if exists "public read post images" on storage.objects;
 create policy "public read post images"
   on storage.objects for select
   using (bucket_id = 'post-images');
 
+drop policy if exists "admin write post images" on storage.objects;
 create policy "admin write post images"
   on storage.objects for insert
   with check (bucket_id = 'post-images' and auth.role() = 'authenticated');
 
+drop policy if exists "admin update post images" on storage.objects;
 create policy "admin update post images"
   on storage.objects for update
   using (bucket_id = 'post-images' and auth.role() = 'authenticated');
 
+drop policy if exists "admin delete post images" on storage.objects;
 create policy "admin delete post images"
   on storage.objects for delete
   using (bucket_id = 'post-images' and auth.role() = 'authenticated');
