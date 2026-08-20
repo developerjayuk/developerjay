@@ -37,7 +37,7 @@ graph TD
 
 - **Wave 1:** PB-0001 (everything depends on it — do this first, solo).
 - **Wave 2 (parallel):** PB-0002, PB-0005 — both depend only on PB-0001, touch disjoint file
-  trees (`/admin` + `middleware.ts` vs. `app/(public)/`), safe to run in separate worktrees.
+  trees (`/admin` + `proxy.ts` vs. `app/(public)/`), safe to run in separate worktrees.
 - **Wave 3:** PB-0003 (needs PB-0002's gated admin layout to build the CRUD UI inside).
 - **Wave 4 (parallel):** PB-0004 (needs PB-0003's post editor), PB-0006 (needs PB-0005's public
   list page) — disjoint file trees (`app/admin/posts/` vs. `app/(public)/`), safe to parallelize.
