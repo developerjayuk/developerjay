@@ -7,17 +7,17 @@ portfolio artifact. Stack: Next.js (App Router, TypeScript) as the sole deployab
 to Supabase (Postgres + Auth + Storage) — no hand-rolled backend service.
 
 ## Architecture map
-<!-- Not yet scaffolded — this is the decided shape from the architecture doc, not existing code. -->
 ```
 app/
   (public)/            # post list + post detail pages — statically generated with ISR,
                         #   revalidated on publish (posts change at most weekly)
   admin/                # session-gated CRUD UI (login, post list/create/edit/delete,
-                        #   image upload, draft/publish toggle) — gated by middleware
-  middleware.ts         # checks active Supabase session AND session email == allowlisted admin
+                        #   image upload, draft/publish toggle) — gated by proxy
+  proxy.ts              # checks active Supabase session AND session email == allowlisted admin
+                        #   (Next.js 16 renamed the middleware.ts convention to proxy.ts)
 lib/
-  supabase/              # server client (uses service_role key, server-only) and browser
-                        #   client (uses anon key) — kept separate, service_role must never
+  supabase/              # privileged server client (secret key, server-only, bypasses RLS) and
+                        #   browser client (publishable key) — kept separate, secret key must never
                         #   reach the client
 ```
 Supabase project (external, not in this repo): `posts` table, RLS policies, one Storage bucket for
@@ -26,7 +26,7 @@ images, Auth config with public sign-up disabled and one allowlisted admin user.
 ## Where new code goes
 - **New public page:** `app/(public)/` — follows the existing ISR pattern (see Rendering below).
 - **New admin capability:** `app/admin/` — a Server Action or Route Handler using the server Supabase
-  client (`lib/supabase/server`, service_role).
+  client (`lib/supabase/server`, secret key).
 - **Any Supabase read/write:** goes through `lib/supabase/server` or `lib/supabase/client`, not an
   ad-hoc `createClient()` call.
 
@@ -56,7 +56,10 @@ images, Auth config with public sign-up disabled and one allowlisted admin user.
   don't reintroduce either without the user explicitly reopening that decision.
 
 ## Commands
-No package.json yet — commands TBD once the app is scaffolded.
+- `npm run dev` — start the dev server (Turbopack).
+- `npm run build` — production build.
+- `npm run lint` — ESLint.
+- `npx supabase migration new <name>` — add a new migration under `supabase/migrations/`.
 
 ## On-demand context
 - Recurring patterns → `.claude/references/<topic>.md`.
