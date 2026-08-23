@@ -13,18 +13,24 @@ import {
 // Hero
 import GithubLineIcon from "remixicon-react/GithubLineIcon";
 import LinkedInIcon from "remixicon-react/LinkedinBoxLineIcon";
+import PencilLineIcon from "remixicon-react/PencilLineIcon";
 
 /* eslint-disable react/jsx-key */
 export const heroIcons: HeroIconDataModel[] = [
   {
-    title: "LinkedIn",
-    icon: <LinkedInIcon />,
+      title: "LinkedIn",
+      icon: <LinkedInIcon />,
     url: "https://www.linkedin.com/in/developerjay/",
   },
   {
     title: "Github",
     icon: <GithubLineIcon />,
     url: "https://github.com/developerjayuk",
+  },
+  {
+    title: "Blog",
+    icon: <PencilLineIcon />,
+    url: "https://blog.developerjay.com",
   },
 ];
 
@@ -264,7 +270,7 @@ export const experienceData: ExperienceDataModel[] = [
       "Made architectural and technical decisions across the application stack, balancing maintainability, scalability and delivery requirements.",
       "Worked closely with the development team to establish development patterns and maintain code quality.",
       "Mentored a mid-level engineer, providing technical guidance, code reviews and support with architectural decisions.",
-      "Contributed across the full software development lifecycle from architecture and development through to production launch."
+      "Contributed across the full software development lifecycle from architecture and development through to production launch.",
     ],
     experience: [],
   },
@@ -278,7 +284,7 @@ export const experienceData: ExperienceDataModel[] = [
       "Contributed to the successful launch of the Sainsbury's Argos Monthly Payment Plan as part of a cross-functional development team.",
       "Developed customer-facing features using React and Node.js APIs.",
       "Built and maintained unit and integration tests to ensure application quality.",
-      "Worked with AWS serverless architecture and cloud-native deployments in an agile environment."
+      "Worked with AWS serverless architecture and cloud-native deployments in an agile environment.",
     ],
     experience: [],
   },
@@ -291,8 +297,8 @@ export const experienceData: ExperienceDataModel[] = [
     details: [
       "Contributed to the successful launch of the Sainsbury's Argos Monthly Payment Plan as part of a cross-functional development team.",
       "Developed customer-facing features using React and Node.js APIs.",
-      "Built and maintained unit and integration tests to ensure application quality.", 
-      "Worked with AWS serverless architecture and cloud-native deployments in an agile environment."
+      "Built and maintained unit and integration tests to ensure application quality.",
+      "Worked with AWS serverless architecture and cloud-native deployments in an agile environment.",
     ],
     experience: [],
   },
@@ -306,7 +312,7 @@ export const experienceData: ExperienceDataModel[] = [
       "Developed and maintained cloud-based dental management software using C#, .NET Core, Entity Framework, SQL, OData, Azure and React.",
       "Designed and delivered new functionality and integrations across frontend and backend systems.",
       "Led technical upgrades and improvements to codebase maintainability and reliability.",
-      "Contributed to enterprise projects supporting a major Saudi government contract."
+      "Contributed to enterprise projects supporting a major Saudi government contract.",
     ],
     experience: [],
   },
@@ -321,7 +327,7 @@ export const experienceData: ExperienceDataModel[] = [
       "Delivered full-stack functionality using C#, .NET Core, React, Angular, JavaScript and Node.js.",
       "Developed and integrated APIs and backend services using .NET Core, SQL and NHibernate.",
       "Built automated tests with NUnit and contributed to code reviews, technical decisions and agile delivery.",
-      "Worked across a diverse technology stack including PHP, DotNetNuke, Swagger, NPM and SCSS."
+      "Worked across a diverse technology stack including PHP, DotNetNuke, Swagger, NPM and SCSS.",
     ],
     experience: [],
   },
@@ -335,7 +341,7 @@ export const experienceData: ExperienceDataModel[] = [
       "Worked at a recruitment software company, handling front-end, back-end, and .NET-based integrations.",
       "Won multiple innovation awards while tackling new challenges.",
       "Built career pages for Santander, BBC, and the Ministry of Justice.",
-      "Developed APIs from scratch and integrated with 100+ platforms like Monster, Reed, SHL, and TalentQ."
+      "Developed APIs from scratch and integrated with 100+ platforms like Monster, Reed, SHL, and TalentQ.",
     ],
     experience: [],
   },
@@ -350,7 +356,7 @@ export const experienceData: ExperienceDataModel[] = [
       "Designed and built APIs and integrations connecting the platform with 100+ external recruitment and assessment platforms.",
       "Delivered career-site solutions for organisations including Santander, the BBC and the Ministry of Justice.",
       "Developed scalable frontend and backend solutions, integrating platforms including Monster, Reed, SHL and TalentQ. Collaborated with colleagues and stakeholders to deliver new functionality and technical improvements.",
-      "Received multiple company innovation awards for contributions to new products and technical solutions."
+      "Received multiple company innovation awards for contributions to new products and technical solutions.",
     ],
     experience: [],
   },
