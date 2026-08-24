@@ -4,8 +4,6 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
-// import Reviews from "@/components/Reviews";
-// import PricingPlans from "@/components/PricingPlans";
 import Contact from "@/components/Contact";
 import Questions from "@/components/Questions";
 import NavBar from "@/components/NavBar";

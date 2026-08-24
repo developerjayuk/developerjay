@@ -402,7 +402,7 @@ export const projectsData: ProjectDataModel[] = [
     name: "Developer profile (v3)",
     desc: "Updated version of my Developer profile",
     image: "/projects/developer-profile.jpg",
-    tech: ["NextJS", "React", "Tailwind", "Typescript"],
+    tech: ["NextJS", "React", "Tailwind", "FramerMotion", "Typescript"],
     url: "https://developerjay.com",
   },
   {
@@ -545,7 +545,6 @@ export const navbarData: NavBarDataModel[] = [
     name: "Projects",
     icon: <ProjectorLineIcon />,
   },
-
   {
     id: "contact",
     name: "Contact",
@@ -556,16 +555,6 @@ export const navbarData: NavBarDataModel[] = [
     name: "Questions",
     icon: <QuestionAnswerLineIcon />,
   },
-  // {
-  //   id: "pricing",
-  //   name: "Pricing",
-  //   icon: <PriceTag3LineIcon />,
-  // },
-  // {
-  //   id: "reviews",
-  //   name: "Reviews",
-  //   icon: <UserStarLineIcon />,
-  // },
 ];
 
 // End of navbar
