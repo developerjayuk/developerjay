@@ -3,7 +3,6 @@ import {
   SkillDataModel,
   ExperienceDataModel,
   AboutDataModel,
-  PricingPlanModel,
   QuestionDataModel,
   NavBarDataModel,
   HeroIconDataModel,
@@ -18,8 +17,8 @@ import PencilLineIcon from "remixicon-react/PencilLineIcon";
 /* eslint-disable react/jsx-key */
 export const heroIcons: HeroIconDataModel[] = [
   {
-      title: "LinkedIn",
-      icon: <LinkedInIcon />,
+    title: "LinkedIn",
+    icon: <LinkedInIcon />,
     url: "https://www.linkedin.com/in/developerjay/",
   },
   {
@@ -393,59 +392,66 @@ export const reviewsData = [
 // images 612 x 408
 export const projectsData: ProjectDataModel[] = [
   {
+    name: "Developer Jay's Blog",
+    desc: "My Developer blog where I write about web development, programming and technology",
+    image: "/projects/developer-blog.jpg",
+    tech: ["NextJS", "React", "Tailwind", "Typescript", "Supabase"],
+    url: "https://blog.developerjay.com",
+  },
+  {
     name: "Developer profile (v3)",
     desc: "Updated version of my Developer profile",
     image: "/projects/developer-profile.jpg",
-    tech: ["NextJS", "HTML", "React", "CSS", "Tailwind", "Typescript"],
+    tech: ["NextJS", "React", "Tailwind", "Typescript"],
     url: "https://developerjay.com",
   },
   {
     name: "Tailwind CSS & JS animations",
     desc: "Demo HTML template that uses tailwind CSS and JS animations",
     image: "/projects/tailwind-animations.jpg",
-    tech: ["HTML", "CSS", "Tailwind"],
+    tech: ["Tailwind"],
     url: "https://developerjayuk.github.io/playground-javascript/animated-template/",
   },
   {
     name: "Movie App using React",
     desc: "A movie app specifically to test React Hooks",
     image: "/projects/react-movie-app.jpg",
-    tech: ["HTML", "CSS", "React", "API"],
+    tech: ["React", "API"],
     url: "https://react-hooks-movie-app.vercel.app/",
   },
   {
     name: "Flexbox Demo",
     desc: "Getting to grips with Flexbox layouts",
     image: "/projects/flexbox-demo.jpg",
-    tech: ["HTML", "CSS", "Flexbox"],
+    tech: ["Flexbox"],
     url: "https://developerjayuk.github.io/playground-advanced-css/Flexbox/",
   },
   {
     name: "Movie App using Angular",
     desc: "Project to test Angular with a movie API",
     image: "/projects/angular-movie-app.jpg",
-    tech: ["HTML", "CSS", "Angular", "Typescript", "API"],
+    tech: ["Angular", "Typescript", "API"],
     url: "https://movie-geek.vercel.app/",
   },
   {
     name: "I-Robot Comedian",
     desc: "Pure JS project that uses 2 APIs",
     image: "/projects/i-robot-comedian.jpg",
-    tech: ["HTML", "CSS", "Javascript", "API"],
+    tech: ["Javascript", "API"],
     url: "https://developerjayuk.github.io/playground-javascript/i-robot-comedian/",
   },
   {
     name: "Infinite scroll Demo",
     desc: "Using Javascript, CSS and an API to infinitely scroll",
     image: "/projects/infinite-scroll.jpg",
-    tech: ["HTML", "CSS", "Javascript", "API"],
+    tech: ["Javascript", "API"],
     url: "https://developerjayuk.github.io/playground-javascript/infinite-scroll/",
   },
   {
     name: "Pig Game",
     desc: "Creating a version of the Pig Game only using JS",
     image: "/projects/pig-game.jpg",
-    tech: ["HTML", "CSS", "Javascript"],
+    tech: ["Javascript"],
     url: "https://developerjayuk.github.io/playground-javascript/Pig-Dice-Game/",
   },
 ];
@@ -453,60 +459,6 @@ export const projectsData: ProjectDataModel[] = [
 export const uniqueTech = Array.from(new Set(projectsData.flatMap((project) => project.tech)));
 export const projectsButton: string[] = ["All", ...uniqueTech];
 // End of Projects
-
-// Pricing Plans
-export const pricingPlans: PricingPlanModel[] = [
-  {
-    title: "Basic",
-    pricing: "£200 - $500",
-    features: [
-      "Up to 5 pages",
-      "Responsive design ",
-      "Basic SEO ",
-      "Contact form",
-      "Social media links",
-      "1 month support",
-    ],
-    recommended: "Small businesses & personal blogs",
-  },
-  {
-    title: "Premium",
-    pricing: "£5,000 - £10,000",
-    features: [
-      "Unlimited pages",
-      "Responsive design",
-      "Comprehensive SEO",
-      "Contact forms",
-      "Social media links",
-      "Advanced security",
-      "E-commerce (unlimited products)",
-      "Blog setup",
-      "Google Analytics with custom reports",
-      "6 months support",
-    ],
-    recommended: "Large businesses & complex e-commerce sites, custom web applications",
-  },
-  {
-    title: "Standard",
-    pricing: "£1,500 - £3,000",
-    features: [
-      "Up to 10 pages",
-      "Responsive design",
-      "Advanced SEO",
-      "Contact form",
-      "Social media links",
-      "E-commerce (20 products)",
-      "Blog setup",
-      "Google Analytics",
-      "3 months support",
-    ],
-    recommended: "Medium-sized businesses & online stores",
-  },
-];
-
-import CheckLineIcon from "remixicon-react/CheckLineIcon";
-export const checkIcon = <CheckLineIcon />;
-// End of pricing plans
 
 // Q&A section
 export const questions: QuestionDataModel[] = [

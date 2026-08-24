@@ -27,7 +27,7 @@ export default function Home() {
           }
         });
       },
-      { threshold: 0.3 }
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
     );
 
     if (compsRef?.current?.children) {
