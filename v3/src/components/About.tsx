@@ -1,11 +1,31 @@
 // tell nextjs to render on the client side
 "use client";
+import { useEffect, useState } from "react";
 import Heading from "./sub/Heading";
 import Achievements from "./sub/Achievements";
 import Image from "next/image";
 import { aboutData, aboutText, arrowLeftIcon } from "@/assets";
 
 const About = () => {
+  const [githubRepos, setGithubRepos] = useState<number>(
+    aboutData.find((item) => item.title === "Github Repos")?.amount ?? 0
+  );
+
+  useEffect(() => {
+    fetch("/api/github-stats")
+      .then((res) => res.json())
+      .then((data) => {
+        if (typeof data.publicRepos === "number") {
+          setGithubRepos(data.publicRepos);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  const stats = aboutData.map((item) =>
+    item.title === "Github Repos" ? { ...item, amount: githubRepos } : item
+  );
+
   return (
     <div id="about" className="min-h-screen flex flex-col items-center justify-center">
       <Heading text={"About Me"} />
@@ -35,7 +55,7 @@ const About = () => {
         </div>
       </div>
       <div className="mt-20 w-full flex flex-wrap items-center justify-between gap-x-7 gap-y-10">
-        {aboutData.map((item, i) => (
+        {stats.map((item, i) => (
           <Achievements key={i} title={item.title} amount={item.amount}>
             {item.icon}
           </Achievements>

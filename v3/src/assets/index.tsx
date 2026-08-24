@@ -213,39 +213,6 @@ export const skillsData: SkillDataModel[] = [
 ].sort((a, b) => b.exp - a.exp);
 // End of Skills
 
-// About Me
-import GithubFillIcon from "remixicon-react/GithubFillIcon";
-import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
-import AwardFillIcon from "remixicon-react/AwardFillIcon";
-
-export const aboutData: AboutDataModel[] = [
-  {
-    title: "Successful Hobby Projects",
-    amount: 15,
-    icon: <Projector2LineIcon />,
-  },
-  {
-    title: "Github Repos",
-    amount: 30,
-    icon: <GithubFillIcon />,
-  },
-  {
-    title: "Developer Skills",
-    amount: skillsData.length,
-    icon: <AwardFillIcon />,
-  },
-];
-
-import DownloadLineIcon from "remixicon-react/DownloadLineIcon";
-import ArrowLeftSFillIcon from "remixicon-react/ArrowLeftSFillIcon";
-
-export const downloadIcon = <DownloadLineIcon />;
-export const arrowLeftIcon = <ArrowLeftSFillIcon />;
-
-export const aboutText: string =
-  " Hey, I'm Jason, a fullstack web developer. I love tackling all elements of web development and constantly learning new skills in these areas. I've coded in many popular languages such as HTML, CSS, JavaScript, React, Angular, NextJS, .Net(C#)... to build responsive websites, functional desktop applications, and well designed phone apps. I'm a great learner and pride myself on my creativity and problem solving skills.";
-// End of About Me
-
 // Experience
 export const experienceData: ExperienceDataModel[] = [
   {
@@ -459,6 +426,39 @@ export const projectsData: ProjectDataModel[] = [
 export const uniqueTech = Array.from(new Set(projectsData.flatMap((project) => project.tech)));
 export const projectsButton: string[] = ["All", ...uniqueTech];
 // End of Projects
+
+// About Me
+import GithubFillIcon from "remixicon-react/GithubFillIcon";
+import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
+import AwardFillIcon from "remixicon-react/AwardFillIcon";
+
+export const aboutData: AboutDataModel[] = [
+  {
+    title: "Hobby Projects",
+    amount: projectsData.length,
+    icon: <Projector2LineIcon />,
+  },
+  {
+    title: "Github Repos",
+    amount: 30,
+    icon: <GithubFillIcon />,
+  },
+  {
+    title: "Developer Skills",
+    amount: skillsData.length,
+    icon: <AwardFillIcon />,
+  },
+];
+
+import DownloadLineIcon from "remixicon-react/DownloadLineIcon";
+import ArrowLeftSFillIcon from "remixicon-react/ArrowLeftSFillIcon";
+
+export const downloadIcon = <DownloadLineIcon />;
+export const arrowLeftIcon = <ArrowLeftSFillIcon />;
+
+export const aboutText: string =
+  " Hey, I'm Jason, a fullstack web developer. I love tackling all elements of web development and constantly learning new skills in these areas. I've coded in many popular languages such as HTML, CSS, JavaScript, React, Angular, NextJS, .Net(C#)... to build responsive websites, functional desktop applications, and well designed phone apps. I'm a great learner and pride myself on my creativity and problem solving skills.";
+// End of About Me
 
 // Q&A section
 export const questions: QuestionDataModel[] = [
