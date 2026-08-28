@@ -32,7 +32,7 @@ const Toggle: React.FC<PropTypes> = ({ children }) => {
     if (darkTheme === undefined) {
       // set default to match users system settings
       const systemTheme =
-        typeof window !== undefined && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: dark)").matches;
 
       if (systemTheme) addDarkMode();
       else removeDarkMode();
@@ -40,8 +40,6 @@ const Toggle: React.FC<PropTypes> = ({ children }) => {
       if (darkThemeParsed) addDarkMode();
       else removeDarkMode();
     }
-
-    console.log(darkTheme, darkThemeParsed);
   }, []);
 
   return (
