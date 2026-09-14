@@ -270,7 +270,7 @@ export const experienceData: ExperienceDataModel[] = [
   },
   {
     year: 2021,
-    company: "Contract @ Carestream Dental",
+    company: "Permanent @ Carestream Dental",
     title: "SENIOR FULL STACK DEVELOPER",
     start: "Jan 2021",
     end: "Nov 2021",
