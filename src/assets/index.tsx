@@ -216,11 +216,11 @@ export const skillsData: SkillDataModel[] = [
 export const experienceData: ExperienceDataModel[] = [
   {
     year: 2026,
-    company: "DevelperJay",
+    company: "DeveloperJay",
     title: "Freelancing",
     start: "Jan 2026",
     end: "Sep 2026",
-    details: ["Freelancing, studying for AI certifications and creating commercial apps"],
+    details: ["Freelancing, studying for AI certifications. Learning as much as possible around AI coding agents and processes and creating commercial apps"],
     experience: [],
   },
   {
