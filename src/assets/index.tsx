@@ -220,7 +220,7 @@ export const experienceData: ExperienceDataModel[] = [
     title: "Freelancing",
     start: "Jan 2026",
     end: "Sep 2026",
-    details: ["Freelancing, studying for AI certifications. Learning as much as possible around AI coding agents and processes and creating commercial apps"],
+    details: ["Freelancing.", "Studying for AI certifications.", "Learning AI coding agents and processes for Claude and Codex.", "Creating commercial apps including LingoPT.com"],
     experience: [],
   },
   {
